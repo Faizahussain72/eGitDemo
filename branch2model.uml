@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_wZGg4AIaEeW3O67tZbcHXg" name="model">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8vnxoAIaEeW3O67tZbcHXg" name="Group Checkin">
+    <include xmi:type="uml:Include" xmi:id="_8vnxoQIaEeW3O67tZbcHXg" addition="_8vnxogIaEeW3O67tZbcHXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8vnxogIaEeW3O67tZbcHXg" name="Individual Checkin">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_8vnxowIaEeW3O67tZbcHXg" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_8vnxpgIaEeW3O67tZbcHXg" name="Tour Guide "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8vnxqQIaEeW3O67tZbcHXg" memberEnd="_8vnxqgIaEeW3O67tZbcHXg _8vnxrQIaEeW3O67tZbcHXg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8vnxqgIaEeW3O67tZbcHXg" name="tour guide " type="_8vnxpgIaEeW3O67tZbcHXg" association="_8vnxqQIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8vnxqwIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8vnxrAIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8vnxrQIaEeW3O67tZbcHXg" name="group checkin" type="_8vnxoAIaEeW3O67tZbcHXg" association="_8vnxqQIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8vnxrgIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8vnxrwIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8vnxsAIaEeW3O67tZbcHXg" name="Security Screening"/>
+</uml:Model>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0eheIAIaEeW3O67tZbcHXg" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7VIJkAIaEeW3O67tZbcHXg" name="Tour Guide ">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7VIJkQIaEeW3O67tZbcHXg" general="_7VIJnAIaEeW3O67tZbcHXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7VIJkgIaEeW3O67tZbcHXg" name="Security Screening"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7VIJkwIaEeW3O67tZbcHXg" memberEnd="_7VIJlAIaEeW3O67tZbcHXg _7VIJlwIaEeW3O67tZbcHXg">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJlAIaEeW3O67tZbcHXg" name="passenger" type="_7VIJnAIaEeW3O67tZbcHXg" association="_7VIJkwIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJlQIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJlgIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJlwIaEeW3O67tZbcHXg" name="security screening" type="_7VIJkgIaEeW3O67tZbcHXg" association="_7VIJkwIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJmAIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJmQIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7VIJmgIaEeW3O67tZbcHXg" name="Individual Checkin">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_7VIJmwIaEeW3O67tZbcHXg" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7VIJnAIaEeW3O67tZbcHXg" name="Passenger"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7VIJnQIaEeW3O67tZbcHXg" memberEnd="_7VIJngIaEeW3O67tZbcHXg _7VIJoQIaEeW3O67tZbcHXg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJngIaEeW3O67tZbcHXg" name="tour guide " type="_7VIJkAIaEeW3O67tZbcHXg" association="_7VIJnQIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJnwIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJoAIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJoQIaEeW3O67tZbcHXg" name="group checkin" type="_7VRTgAIaEeW3O67tZbcHXg" association="_7VIJnQIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJogIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJowIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7VIJpAIaEeW3O67tZbcHXg" name="Baggage Checkin">
+    <extend xmi:type="uml:Extend" xmi:id="_7VIJpQIaEeW3O67tZbcHXg" extendedCase="_7VIJmgIaEeW3O67tZbcHXg" extensionLocation="_7VIJmwIaEeW3O67tZbcHXg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7VIJpgIaEeW3O67tZbcHXg" memberEnd="_7VIJpwIaEeW3O67tZbcHXg _7VIJqgIaEeW3O67tZbcHXg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJpwIaEeW3O67tZbcHXg" name="passenger" type="_7VIJnAIaEeW3O67tZbcHXg" association="_7VIJpgIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJqAIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJqQIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7VIJqgIaEeW3O67tZbcHXg" name="individual checkin" type="_7VIJmgIaEeW3O67tZbcHXg" association="_7VIJpgIaEeW3O67tZbcHXg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VIJqwIaEeW3O67tZbcHXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VIJrAIaEeW3O67tZbcHXg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7VRTgAIaEeW3O67tZbcHXg" name="Group Checkin">
+    <include xmi:type="uml:Include" xmi:id="_7VRTgQIaEeW3O67tZbcHXg" addition="_7VIJmgIaEeW3O67tZbcHXg"/>
+  </packagedElement>
+</uml:Model>
